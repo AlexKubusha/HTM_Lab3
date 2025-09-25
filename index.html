@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Персональна сторінка — Студент</title>
+  <!-- Місце для підключення CSS в подальшій роботі -->
+  <link rel="stylesheet" href="styles.css" media="all">
+  <!-- Короткі метадані для SEO та доступності -->
+  <meta name="description" content="Персональна сторінка студента. Інформація про навчання, хобі та контакти.">
+</head>
+
+<body id="page-root">
+  <!-- HEADER -->
+  <header id="site-header" class="site-section" role="banner">
+    <h1 id="site-title">Сторінка Кубуші Олексія</h1>
+    <p id="site-tagline">Навчаюся на кафедрі комп'ютернийх наук. Зацікавлений в розробці ПЗ, моделюванні та візуалізації даних.</p>
+    <!-- Умовне фото автора: головне зображення сторінки -->
+    <figure id="avatar-figure" aria-labelledby="site-title">
+      <img id="avatar-image" src="./assets/img/avatar.jpg" alt="Фото: Кубуша Олексій" title="Кубуша Олексій" fetchpriority="high">
+      <figcaption>Портрет — Кубуши Олексія</figcaption>
+    </figure>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav id="main-nav" class="site-section" role="navigation" aria-label="Головне меню">
+    <ul id="nav-list">
+      <li class="nav-item"><a href="#about-me">Про мене</a></li>
+      <li class="nav-item"><a href="#hobbies">Хобі</a></li>
+      <li class="nav-item"><a href="#contacts">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content" class="site-section" role="main">
+
+    <!-- ARTICLE: персональний опис -->
+    <article id="about-me" aria-labelledby="about-heading" class="content-block">
+      <h2 id="about-heading">Про мене</h2>
+      <p>Привіт! Я — студент факультету <strong>ЕлIT</strong>. Наразі вивчаю бази даних та клієнтські технології Web-програмування. В університеті займаюсь проєктами створення баз даних та власних інтернет сторінок.</p>
+      <h3>Освіта та діяльність</h3>
+      <p><b>Навчання:</b> 3 бакалаврський курс, спеціальність — Інформатика. Учасник лабораторних робіт з клієнтських технологій Web-програмування .  Також іноді працюю над індивідуальними проєктами, використовуючи інструменти: Mathcad, FlexSim.</p>
+      <!-- Місце для майбутньої інтерактивності (форма, кнопки виклику модального вікна) -->
+      <p><b>Плани:</b> інтегрувати на цю сторінку форму реєстрації та вхід через модальне вікно у наступних лабораторних роботах.</p>
+    </article>
+
+    <!-- SECTION: хобі та інтереси -->
+    <section id="hobbies" aria-labelledby="hobbies-heading" class="content-block">
+      <h2 id="hobbies-heading">Мої хобі</h2>
+      <p><b>Я люблю:</b> спати, їсти, читати літературу, грати в настільні ігри та дивитись аніме. Також цікавлюсь дизайном — створення постів та рекламних матеріалів для студентських ініціатив.</p>
+
+      <!-- Підсекція з улюбленими книгами/фільмами -->
+      <section id="fav-media" aria-labelledby="fav-media-heading">
+        <h3 id="fav-media-heading">Улюблені книги та фільми</h3>
+        <ul>
+          <li>"Маленький принц" — просто чудова історія</li>
+          <li>"Пролітаючи над гніздом зозулі" — цікавий сюжет</li>
+          <li>Аніме: "Violet Evergarden" — за мотиви розвитку героїні та сюжету</li>
+        </ul>
+      </section>
+
+      <!-- Зображення, яке не критичне для первинного візуального контенту -->
+      <figure id="hobby-image-figure">
+        <img src="./assets/img/hobby.png" alt="Фото з хобі: настільна гра" title="Doobl Image" loading="lazy">
+        <figcaption>Doobl Image - моя улюблена настільна гра.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ASIDE: допоміжна інформація -->
+    <aside id="sidebar" class="site-section" role="complementary" aria-labelledby="aside-heading">
+      <h2 id="aside-heading">Цікаві посилання</h2>
+      <nav aria-label="Соціальні мережі">
+        <h3> Мої соціальні мережі</h3>
+        <ul>
+          <li><a href="https://www.linkedin.com/in/oleksii-kubusha-1114ab290/" id="linkedin-link" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          <li><a href="https://github.com/AlexKubusha" id="github-link" class="social-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          <li><a href="https://t.me/Mr_Baby_Lexa" id="telegram-link" class="social-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" class="site-section" role="contentinfo">
+    <h2 class="visually-hidden">Контакти</h2>
+    <address id="contacts">
+      <p>Електронна пошта: <a href="mailto:kubusha.oleksii@student.sumdu.edu.ua">kubusha.oleksii@student.sumdu.edu.ua</a></p>
+    </address>
+  </footer>
+
+  <!-- Сценарій-примітка: місце для майбутніх JS-файлів (логіка форм і тд) -->
+  <script>
+   
+  </script>
+
+</body>
+</html>
